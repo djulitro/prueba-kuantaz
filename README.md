@@ -10,7 +10,6 @@ Este proyecto es una API REST para obtener información sobre beneficios agrupad
 
 - PHP >= 8.x  
 - Composer  
-- MySQL  
 - Laragon (opcional pero recomendado para levantar el proyecto rápido)  
 
 ---
