@@ -1,0 +1,115 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Mi API",
+        "description": "Documentación de ejemplo",
+        "version": "1.0"
+    },
+    "paths": {
+        "/api/beneficios": {
+            "get": {
+                "summary": "Obtiene la lista de beneficios agrupados por año",
+                "operationId": "0b4ba485712bc7b1e4e79133e068f05f",
+                "responses": {
+                    "200": {
+                        "description": "Respuesta exitosa con beneficios",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "code": {
+                                            "type": "integer",
+                                            "example": 200
+                                        },
+                                        "success": {
+                                            "type": "boolean",
+                                            "example": true
+                                        },
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "properties": {
+                                                    "year": {
+                                                        "type": "integer",
+                                                        "example": 2023
+                                                    },
+                                                    "num": {
+                                                        "type": "integer",
+                                                        "example": 1
+                                                    },
+                                                    "beneficios": {
+                                                        "type": "array",
+                                                        "items": {
+                                                            "properties": {
+                                                                "id_programa": {
+                                                                    "type": "integer",
+                                                                    "example": 147
+                                                                },
+                                                                "monto": {
+                                                                    "type": "integer",
+                                                                    "example": 40656
+                                                                },
+                                                                "fecha_recepcion": {
+                                                                    "type": "string",
+                                                                    "example": "09/11/2023"
+                                                                },
+                                                                "fecha": {
+                                                                    "type": "string",
+                                                                    "example": "2023-11-09"
+                                                                },
+                                                                "anio": {
+                                                                    "type": "string",
+                                                                    "example": "2023"
+                                                                },
+                                                                "view": {
+                                                                    "type": "boolean",
+                                                                    "example": true
+                                                                },
+                                                                "ficha": {
+                                                                    "properties": {
+                                                                        "id": {
+                                                                            "type": "integer",
+                                                                            "example": 922
+                                                                        },
+                                                                        "nombre": {
+                                                                            "type": "string",
+                                                                            "example": "Emprende"
+                                                                        },
+                                                                        "id_programa": {
+                                                                            "type": "integer",
+                                                                            "example": 147
+                                                                        },
+                                                                        "url": {
+                                                                            "type": "string",
+                                                                            "example": "emprende"
+                                                                        },
+                                                                        "categoria": {
+                                                                            "type": "string",
+                                                                            "example": "trabajo"
+                                                                        },
+                                                                        "descripcion": {
+                                                                            "type": "string",
+                                                                            "example": "Fondos concursables para nuevos negocios"
+                                                                        }
+                                                                    },
+                                                                    "type": "object"
+                                                                }
+                                                            },
+                                                            "type": "object"
+                                                        }
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

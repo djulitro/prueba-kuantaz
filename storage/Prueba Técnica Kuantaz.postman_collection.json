@@ -1,0 +1,30 @@
+{
+	"info": {
+		"_postman_id": "df84bcad-ee9f-451a-9457-06968c8c0973",
+		"name": "Prueba Técnica Kuantaz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8682236"
+	},
+	"item": [
+		{
+			"name": "Beneficios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://prueba-kuantaz.test/api/beneficios",
+					"protocol": "http",
+					"host": [
+						"prueba-kuantaz",
+						"test"
+					],
+					"path": [
+						"api",
+						"beneficios"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
